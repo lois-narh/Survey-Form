@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help improve the platform.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name <input type="text" name="name" id="name" placeholder="Enter your name" required></label>
+        <label for="email" id="email-label">Email <input type="email" id="email" name="email" placeholder="Enter your email" required></label>
+        <label for="number" id="number-label">Age <input type="number" id="number" name="age" min="8" max="100" placeholder="Age"></label>
+        <label for="dropdown">Which option best describes your current role?
+          <select id="dropdown" name="option">
+            <option value="">Select a current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Full Time Learner</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+        </label>
+        <fieldset class="preview1">
+          <legend>How often do you visit our page?</legend>
+          <label for="daily"><input type="radio" id="daily" name="daily" value="daily" class="inline" checked>Daily</label>
+          <label for="weekly"><input type="radio" id="weekly" name="weekly" value="weekly" class="inline">Weekly</label>
+          <label for="monthly"><input type="radio" id="monthly" name="monthly" value="monthly" class="inline">Monthly</label>
+          <label for="rarely"><input type="radio" id="rarely" name="rarely" value="rarely" class="inline">Rarely</label>
+        </fieldset>
+        <fieldset class="preview2">
+          <legend>On a scale from 1 to 5, how satisfied are you with our service?</legend>
+          <label for="one"><input type="radio" id="one" name="one" value="one" class="inline">1</label>
+          <label for="two"><input type="radio" id="two" name="two" value="2" class="inline">2</label>
+          <label for="three"><input type="radio" id="three" name="three" value="3" class="inline">3</label>
+          <label for="four"><input type="radio" id="four" name="four" value="4" class="inline">4</label>
+          <label for="five"><input type="radio" id="five" name="five" value="5" class="inline">5</label>
+        </fieldset>
+        <fieldset class="preview3"> 
+          <label for="dropdown">What is your favourite feature? 
+          <select id="dropdown" name="feature">
+            <option value="">Select an option</option>
+            <option value="1">Challenges</option>
+            <option value="2">Solutions</option>
+            <option value="3">Articles</option>
+            <option value="4">Resources</option>
+          </select>
+          </label>
+          </fieldset>
+        <fieldset class="preview4">
+          <legend>How familiar are you with our product?</legend>
+          <label for="extremely"><input type="checkbox" id="extremely" name="extremely" value="extremely" class="inline">Extremely familiar</label>
+          <label><input type="checkbox"id="very" name="very" value="very" class="inline">Very familiar</label>
+          <label for="somewhat"><input type="checkbox" id="somewhat" name="somewhat" value="somewhat" class="inline">Somewhat familiar</label>
+          <label for="not so"><input type="checkbox" id="not so" name="not so" value="not so" class="inline">Not so familiar</label>
+          <label for="not at all"><input type="checkbox" id="not at all" name="not at all" value="not at all" class="inline">Not at all familiar</label>
+        </fieldset>
+        <fieldset class="preview5">
+          <label for="comments">Any comments or suggestions?</label>
+          <textarea id="comments" placeholder="Enter your comments here..." rows="5" cols="40"></textarea>
+          <input id="submit" value="Submit" type="submit" > 
+        </fieldset>
+      </fieldset>
+    </form>
+  </body>
+</html>
